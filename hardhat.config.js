@@ -3,7 +3,19 @@ require("@openzeppelin/hardhat-upgrades");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.18",
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.18",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+    ],
+  },
   defaultNetwork: "localhost", // hardhat localhost
   networks: {
     hardhat: {
@@ -20,7 +32,7 @@ module.exports = {
     },
     localhost: {
       url: "http://127.0.0.1:8545",
-      gasPrice: 5000000000,
+      gasPrice: 10000000000,
       accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5", "322673135bc119c82300450aed4f29373c06926f02a03f15d31cac3db1ee7716", "09100ba7616fcd062a5e507ead94c0269ab32f1a46fe0ec80056188976020f71", "5352cfb603f3755c71250f24aa1291e85dbc73a01e9c91e7568cd081b0be04db", "f3d9247d078302fd876462e2036e05a35af8ca6124ba1a8fd82fc3ae89b2959d"],
     },
   },
