@@ -16,6 +16,26 @@ module.exports = {
         },
       },
     ],
+    overrides: {
+      "contracts/MyProxyAdmin.sol": {
+        version: "0.8.9",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+      "contracts/MyTransparentUpgradeableProxy.sol": {
+        version: "0.8.9",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+    },
   },
   defaultNetwork: "localhost", // hardhat localhost
   networks: {
