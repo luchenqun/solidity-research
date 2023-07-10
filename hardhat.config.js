@@ -44,7 +44,8 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      sokol: "abc",
+      localhost: "It seems like you can write whatever you want",
+      quarix: "It seems like you can write whatever you want",
     },
     customChains: [
       {
