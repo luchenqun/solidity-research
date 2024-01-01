@@ -9,6 +9,7 @@ contract Simple {
     }
 
     function set(uint newValue) public {
+        require(newValue > 0, "value must be more than zero");
         _value = newValue;
     }
 
