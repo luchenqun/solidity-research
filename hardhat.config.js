@@ -54,18 +54,38 @@ module.exports = {
     localhost: {
       url: "http://127.0.0.1:8545",
       gasPrice: 10000000000,
-      accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5", "322673135bc119c82300450aed4f29373c06926f02a03f15d31cac3db1ee7716", "09100ba7616fcd062a5e507ead94c0269ab32f1a46fe0ec80056188976020f71", "5352cfb603f3755c71250f24aa1291e85dbc73a01e9c91e7568cd081b0be04db", "f3d9247d078302fd876462e2036e05a35af8ca6124ba1a8fd82fc3ae89b2959d"],
+      accounts: [
+        "f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769",
+        "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5",
+        "322673135bc119c82300450aed4f29373c06926f02a03f15d31cac3db1ee7716",
+        "09100ba7616fcd062a5e507ead94c0269ab32f1a46fe0ec80056188976020f71",
+        "5352cfb603f3755c71250f24aa1291e85dbc73a01e9c91e7568cd081b0be04db",
+        "f3d9247d078302fd876462e2036e05a35af8ca6124ba1a8fd82fc3ae89b2959d",
+      ],
     },
     quarix: {
       url: "http://54.169.132.65:8545",
       gasPrice: 10000000000,
-      accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5", "322673135bc119c82300450aed4f29373c06926f02a03f15d31cac3db1ee7716", "09100ba7616fcd062a5e507ead94c0269ab32f1a46fe0ec80056188976020f71", "5352cfb603f3755c71250f24aa1291e85dbc73a01e9c91e7568cd081b0be04db", "f3d9247d078302fd876462e2036e05a35af8ca6124ba1a8fd82fc3ae89b2959d"],
+      accounts: [
+        "f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769",
+        "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5",
+        "322673135bc119c82300450aed4f29373c06926f02a03f15d31cac3db1ee7716",
+        "09100ba7616fcd062a5e507ead94c0269ab32f1a46fe0ec80056188976020f71",
+        "5352cfb603f3755c71250f24aa1291e85dbc73a01e9c91e7568cd081b0be04db",
+        "f3d9247d078302fd876462e2036e05a35af8ca6124ba1a8fd82fc3ae89b2959d",
+      ],
+    },
+    ethos: {
+      url: "http://ethos-eth-rpc.mybc.fun/",
+      gasPrice: 10000000000,
+      accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
     },
   },
   etherscan: {
     apiKey: {
       localhost: "It seems like you can write whatever you want",
       quarix: "It seems like you can write whatever you want",
+      ethos: "It seems like you can write whatever you want",
     },
     customChains: [
       {
@@ -82,6 +102,14 @@ module.exports = {
         urls: {
           apiURL: "http://54.169.132.65:4000/api",
           browserURL: "http://54.169.132.65:4000",
+        },
+      },
+      {
+        network: "ethos",
+        chainId: 20191230,
+        urls: {
+          apiURL: "http://ethos-scan.mybc.fun/api",
+          browserURL: "http://ethos-scan.mybc.fun",
         },
       },
     ],

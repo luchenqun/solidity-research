@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   const ERC20Token = await hre.ethers.getContractFactory("ERC20Token");
-  const erc20Token = await ERC20Token.deploy("THB Stable", "THB");
+  const erc20Token = await ERC20Token.deploy("Tether USD", "USDT");
 
   await erc20Token.deployed();
 
