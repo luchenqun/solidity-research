@@ -26,6 +26,15 @@ module.exports = {
           },
         },
       },
+      "contracts/MUD.sol": {
+        version: "0.8.9",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
       "contracts/MyTransparentUpgradeableProxy.sol": {
         version: "0.8.9",
         settings: {
@@ -76,7 +85,7 @@ module.exports = {
       ],
     },
     ethos: {
-      url: "http://ethos-eth-rpc.mybc.fun/",
+      url: "http://ethos-eth-rpc.mybc.fun",
       gasPrice: 10000000000,
       accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
     },
