@@ -94,6 +94,11 @@ module.exports = {
       gasPrice: 10000000000,
       accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
     },
+    mud: {
+      url: "https://dev-rpc.metauserdao.com",
+      gasPrice: 10000000000,
+      accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
+    },
   },
   etherscan: {
     apiKey: {
@@ -101,6 +106,7 @@ module.exports = {
       quarix: "It seems like you can write whatever you want",
       ethos: "It seems like you can write whatever you want",
       mechain: "It seems like you can write whatever you want",
+      mud: "It seems like you can write whatever you want",
     },
     customChains: [
       {
@@ -133,6 +139,14 @@ module.exports = {
         urls: {
           apiURL: "http://devnet-scan.mechain.tech/api",
           browserURL: "http://devnet-scan.mechain.tech",
+        },
+      },
+      {
+        network: "mud",
+        chainId: 168167,
+        urls: {
+          apiURL: "https://dev-scan.metauserdao.com/api",
+          browserURL: "https://dev-scan.metauserdao.com/",
         },
       },
     ],
