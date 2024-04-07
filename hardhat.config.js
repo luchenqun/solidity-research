@@ -99,6 +99,11 @@ module.exports = {
       gasPrice: 10000000000,
       accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
     },
+    cerbo: {
+      url: "https://dev-rpc.cerboai.com",
+      gasPrice: 10000000000,
+      accounts: ["f78a036930ce63791ea6ea20072986d8c3f16a6811f6a2583b0787c45086f769", "95e06fa1a8411d7f6693f486f0f450b122c58feadbcee43fbd02e13da59395d5"],
+    },
   },
   etherscan: {
     apiKey: {
@@ -107,6 +112,7 @@ module.exports = {
       ethos: "It seems like you can write whatever you want",
       mechain: "It seems like you can write whatever you want",
       mud: "It seems like you can write whatever you want",
+      cerbo: "It seems like you can write whatever you want",
     },
     customChains: [
       {
@@ -147,6 +153,14 @@ module.exports = {
         urls: {
           apiURL: "https://dev-scan.metauserdao.com/api",
           browserURL: "https://dev-scan.metauserdao.com/",
+        },
+      },
+      {
+        network: "cerbo",
+        chainId: 8555,
+        urls: {
+          apiURL: "http://dev-scan.cerbo.com/api",
+          browserURL: "http://dev-scan.cerbo.com/",
         },
       },
     ],
